@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 9;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+.employee-list{
+    width: 100vw;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+table > thead th{
+    background-color: skyblue;
+    padding: px;
+}
+table , th,td{
+    border: 2px solid #e7e7e7;
+    text-align: center;
+}
+.employee-list td{
+    padding: 10px;
+}
+
+/* btn section */
+#modal-toggle-btn{
+    background: skyblue ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.modal {
+    /* Make it occupy the whole document */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(77, 170, 221, 0.4);
+    z-index: 99;
+    display: flex;
+    justify-content: flex-end;
+}
+.modal-body{
+    background-color: skyblue;
+    padding: 30px;
+}
+h2{
+    margin-bottom: 10px;
+}
+.modal-body form {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+.show-modal {
+    display: flex;
+}
+.hide-modal {
+    display: none;
+}
+#Add-Employee{
+    padding: 5px;
+    border: 8px;
+    color: skyblue;
+}
+.close-icon{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    padding: 3px;
+    color: white;
+    padding: 1px;
+    cursor: pointer;
+
+}
+.material-icons{
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+.delete{
+    color: red;
+}
+
+.center-modal {
+    border: 2px solid red;
+    justify-content: center;
+    align-items: center;
+}
+.update-modal-body {
+    width: 400px;
+}
